@@ -16,6 +16,11 @@ header{
     height: 100px;
     border-radius: 50%;
 }
+.cont-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container{
     margin:10px 30px;
 }
