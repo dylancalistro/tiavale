@@ -1,0 +1,250 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #FDE5EC ;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.container{
+    margin:10px 30px;
+}
+.dropdown-menu{
+    background-color:#FDE5EC ;
+}
+.cuenta{
+    display: flex;
+    justify-content: end;
+}
+.cuenta a{
+    font-size: 10px;
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+@media(min-width:320px) and (max-width:991px){
+    .cuenta{
+        display: flex;
+        justify-content: center;
+    }
+    .cuenta a{
+        font-size: 8px;
+    }
+    .logo{
+        margin-left: 100px;
+    }
+}
+/*main*/
+main{
+    background-color:white;
+    
+}
+.carrusel{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.carrusel img{
+    width: 300px;
+    height: 300px;
+    margin: 0 10px 0 10px;
+    border-radius:1% ;
+    
+}
+.carrusel img:hover{
+    animation:scale-down-center 1s;
+    
+}
+@keyframes scale-down-center{0%{transform:scale(1)}100%{transform:scale(.5)}}
+
+
+@media(min-width:320px) and (max-width:991px){
+    .carrusel{
+        display: grid;
+        grid-template-rows: 280px 280px 280px;
+        justify-content: center;
+        align-items: center;
+    }
+    .carrusel img{
+        width: 250px;
+        height: 250px;
+        border-radius:1% ;
+        
+    }
+}
+
+.boton_img{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    background-color: rgba(128, 128, 128, 0.168);
+}
+
+.info h2{
+    font-size: 20px;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    
+}
+.info p{
+    font-size: 15px;
+    color:gray;
+    display: flex;
+    justify-content: center;
+}
+@media(min-width:320px) and (max-width:991px){
+    .boton_img{
+        display: block;
+    }
+    .info h2{
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+    }
+    .info p{
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+    }
+}
+h1{
+    font-size: 20px;
+    font-weight:100 ;
+    padding-top: 100px;
+    text-align: center;
+    color: black;
+}
+.container-variedad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.variedades{
+    margin: 0 20px;
+}
+.variedades img{ 
+    box-shadow: 1px 1px 5px black;
+    width: 250px;
+    height: 250px;
+}
+.text h3{
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+}
+.text p{
+    color: #434343;
+    text-align: center;
+    font-weight: 600;
+}
+.text button{
+    margin-left:45px ;
+    padding: 5px 50px;
+    background-color: #d8ac84;
+    text-align: center;
+    color: white;
+    border: 0;
+}
+@media(min-width:320px) and (max-width:991px){
+    .container-variedad{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+    }
+    .variedades{
+        margin: 15px 5px;
+    }
+    .variedades img{
+    box-shadow: 1px 1px 5px black;
+    width: 140px;
+    height: 150px;
+    }
+    .text h3{
+        text-align: center;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 200;
+    }
+
+    .text button{
+        margin-left:10px ;
+        padding: 5px 30px;
+        background-color: #d8ac84;
+        text-align: center;
+        color: white;
+        border: 0;
+    }
+
+}
+/*footer*/
+footer{
+    background-color:#FDE5EC ;
+}
+.contenedorfooter{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redes svg{
+    width: 30px;
+    height: 30px;
+}
+.red{
+    display: flex;
+    justify-content: center;
+}
+.contacto ul{
+    list-style-type: none ;
+}
+.contacto svg{
+    width: 20px;
+    height: 20px;
+}
+.contacto a{
+    color: black;
+    text-decoration: none;
+    margin-left:5px ;
+}
+.contacto a:hover{
+    text-decoration: underline;
+}
+
+.medios img{
+    box-shadow: 1px 1px 2px black;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+.medios{
+    display: flex;
+    justify-content: center;
+    
+}
+
+@media(min-width:320px) and (max-width:991px){
+    .contenedorfooter{
+        display: block;
+        padding-top: 50px;
+    }
+    .red svg{
+        margin: 0 5px;
+    }
+    .contenedorfooter h4{
+        text-align: center;
+    }
+    .mediospago{
+        padding-bottom: 50px;
+    }
+}
