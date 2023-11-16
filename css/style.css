@@ -95,6 +95,7 @@ main{
     color: gray;
     display: flex;
     justify-content: center;
+    align-items: center;
     
 }
 .info p{
@@ -102,6 +103,7 @@ main{
     color:gray;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 @media(min-width:320px) and (max-width:991px){
     .boton_img{
@@ -111,11 +113,15 @@ main{
         font-size: 18px;
         display: flex;
         justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .info p{
         font-size: 13px;
         display: flex;
         justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
 h1{
@@ -162,13 +168,18 @@ h1{
     .container-variedad{
         display: grid;
         grid-template-columns: 6fr 6fr;
+        
+
     }
     .variedades{
+        display: grid;
+        justify-content: center;
+        align-items: center;
         margin: 15px 5px;
     }
     .variedades img{
     box-shadow: 1px 1px 5px black;
-    width: 140px;
+    width: 150px;
     height: 150px;
     }
     .text h3{
@@ -178,6 +189,9 @@ h1{
         font-weight: 200;
     }
 
+    .text p{
+        text-align: center;
+    }
     .text button{
         margin-left:10px ;
         padding: 5px 30px;
